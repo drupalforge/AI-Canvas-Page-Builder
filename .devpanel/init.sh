@@ -32,7 +32,7 @@ echo
 if [ -f composer.json ]; then
   if composer show --locked cweagans/composer-patches ^2 &> /dev/null; then
     echo 'Update patches.lock.json.'
-    time composer patches-relock
+    # time composer patches-relock
     echo
   fi
 else
